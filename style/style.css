@@ -113,8 +113,20 @@ main{
     overflow-y: auto;
 }
 
-.main-nav ul li a img{
-    width: 25px;
+.main-nav ul li a{
+    font-size: 0.7rem;
+}
+
+.main-nav #first-ul li a img{
+    width: 20px;
+}
+
+.main-nav #second-ul li a h3{
+    font-size: 0.8rem;
+}
+
+.main-nav #second-ul li a i{
+    font-size: 30px;
 }
 
 #call-to-action{
