@@ -127,6 +127,10 @@ main{
     width: 100%;
 }
 
-.text-song p{
+#first-section .text-song p{
+    color: var(--grey);
+}
+
+#second-section p{
     color: var(--grey);
 }
