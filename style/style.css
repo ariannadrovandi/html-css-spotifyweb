@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    --darkcolor: #141922;
+    --darkgrey:#282828;
+    --black:#000000;
+    --white: #ffffff;
+    --grey:#717171;
+    --lightgrey:#c1c1c1;
+    --highlight:#adff2f;
+}
+
+html{
+    scroll-behavior: smooth;
+}
