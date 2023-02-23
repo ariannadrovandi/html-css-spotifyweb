@@ -78,12 +78,20 @@ a{
     flex-wrap: wrap;
 }
 
+.flex-column{
+    flex-direction: column;
+}
+
 .justify-end{
     justify-content: flex-end;
 }
 
 .justify-center{
     justify-content: center;
+}
+
+.justify-start{
+    justify-content: flex-start;
 }
 
 .justify-between{
@@ -366,14 +374,52 @@ main{
     height: 100%;
 }
 
+    /*playbar album*/
+
+    /*playbar-contol*/
 .playbar-control{
     width: 40%;
     height: 100%;
 }
 
+.playbar-control .control-top{
+    width: 100%;
+    height: 60%;
+}
+
+.playbar-control .control-bottom{
+    width: 100%;
+    height: 40%;
+}
+
+.control-top .top-left{
+    width: 25%;
+    height: 100%;
+}
+
+.control-top .top-center{
+    width: 50%;
+    height: 100%;
+}
+
+.control-top .top-right{
+    width: 25%;
+    height: 100%;
+}
+
+.control-bottom .play-duration{
+    width: 12.5%;
+    height: 100%;
+}
+
+.control-bottom .play-range{
+    width: 75%;
+    height: 100%;
+}
 
 
 
+    /*playbar-vol*/
 
 
 /*RESPONSIVE*/
