@@ -128,16 +128,14 @@ main{
     height: calc(100% - 80px);
 }
 
-.main-nav ul li a{
-    font-size: 0.7rem;
-}
-
-.main-nav #second-ul li a h3{
+.main-nav .playlist h3,
+.main-nav ul li a,
+.main-nav .playlist p{
     font-size: 0.8rem;
 }
 
-.aside-nav #second-ul i{
-    font-size: 30px;
+.main-nav .playlist i{
+    font-size: 35px;
 }
 
 .logo{
@@ -153,6 +151,10 @@ main{
 
 .logo img, .logo-small img{
     width: 70%;
+}
+
+.aside-nav #first-ul li{
+    padding: 8px 8px 8px 0;
 }
 
 .aside-nav #first-ul img{
