@@ -339,7 +339,9 @@ main{
 
 /*RESPONSIVE*/
 @media screen and (max-width: 1200px){
-    
+    .col{
+        width: calc(100% / 4);
+    }
 }
 
 @media screen and (max-width: 992px){
