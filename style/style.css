@@ -74,6 +74,10 @@ a{
     display: flex;
 }
 
+.flexwrap{
+    flex-wrap: wrap;
+}
+
 .justify-end{
     justify-content: flex-end;
 }
@@ -235,9 +239,6 @@ main{
     width: 100%;
 }
 
-#first-section .text-song p{
-    color: var(--grey);
-}
 
 #second-section p{
     color: var(--grey);
@@ -256,6 +257,33 @@ main{
     height: 100%;
     object-fit: cover;
 }
+
+.cover-image{
+    position: relative;
+    cursor: pointer;
+}
+
+.cover .cover-image::after{
+    font-family: 'Font Awesome 6 Free';
+    font-size: 3rem;
+    content: "\f144";
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s;
+}
+
+.cover-image:hover::after{
+    opacity: 1;
+}
+
 
 /*PLAYBAR*/
 #playbar{
