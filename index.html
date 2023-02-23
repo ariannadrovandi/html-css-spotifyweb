@@ -27,8 +27,8 @@
                     <section class="aside-nav">
                         <ul id="first-ul">
                             <li><a href="#" class="active d-flex align-center"><img src="./img/home.svg" alt="home"> <span>Home</span></a></li>
-                            <li><a href="#"><img src="./img/search.svg" alt="cerca"> <span>Cerca</span></a></li>
-                            <li><a href="#"><img src="./img/libreria.svg" alt="libreria"> <span>La tua libreria</span></a></li>
+                            <li><a href="#" class="align-center"><img src="./img/search.svg" alt="cerca"> <span>Cerca</span></a></li>
+                            <li><a href="#" class="align-center"><img src="./img/libreria.svg" alt="libreria"> <span>La tua libreria</span></a></li>
                         </ul>
                     </section>
                     <section class="playlist">
@@ -207,7 +207,11 @@
                 </div>
             </section>
         </main>
-        <div id="playbar" class="debug"></div>
+        <div id="playbar" class="debug justify-between d-flex">
+            <div class="playbar-album debug"></div>
+            <div class="playbar-control debug"></div>
+            <div class="playbar-vol debug"></div>
+        </div>
     </div>
 </body>
 </html>

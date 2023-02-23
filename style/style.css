@@ -86,6 +86,10 @@ a{
     justify-content: center;
 }
 
+.justify-between{
+    justify-content: space-between;
+}
+
 .align-center{
     align-items: center;
     align-content: center;
@@ -291,6 +295,21 @@ main{
     height: 90px;
     background-color: var(--darkgrey);
 }
+
+.playbar-album,
+.playbar-vol{
+    width: 230px;
+    height: 100%;
+}
+
+.playbar-control{
+    width: 40%;
+    height: 100%;
+}
+
+
+
+
 
 /*RESPONSIVE*/
 @media screen and (max-width: 1200px){
