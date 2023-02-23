@@ -265,3 +265,44 @@ main{
 }
 
 /*RESPONSIVE*/
+@media screen and (max-width: 1200px){
+    
+}
+
+@media screen and (max-width: 992px){
+    .col{
+        width: calc(100% / 3);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .col{
+        width: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width: 576px){
+   .main-nav{
+        width: 60px;
+   }
+
+   .main-content{
+        width: calc(100% - 60px);
+   }
+
+   .logo,
+   .aside-nav a span,
+   .playlist{
+        display: none;
+   }
+
+   .logo-small{
+        display: block;
+   }
+}
+
+@media screen and (max-width: 400px){
+    .col{
+        width: 100%;
+    }
+}
