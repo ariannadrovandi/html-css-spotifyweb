@@ -215,12 +215,12 @@ main{
     width: 50%;
     height: 2%;
     margin: 0 auto;
-    background-color: transparent;
+    border-bottom: 2px solid transparent;
 }
 
 .main-section nav ul li:hover:after, 
-.main-section nav ul li:active:after{
-    background-color: var(--highlight);
+.main-section nav ul li:active:hover{
+    border-bottom: 2px solid var(--highlight);
 }
 
 .main-section ul li a{
