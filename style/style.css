@@ -430,6 +430,7 @@ main{
     width: 12.5%;
     height: 100%;
     font-size: 0.6rem;
+    padding: 8px;
 }
 
 .control-bottom .play-range{
@@ -437,29 +438,100 @@ main{
     height: 100%;
 }
 
-input[type="range"] {
-  -webkit-appearance: none;
-  margin-right: 15px;
-  width: 400px;
-  height: 5px;
-  background: var(--lightgrey);
-  border-radius: 5px;
-  background-image: linear-gradient(#adff2f, #adff2f);
-  background-size: 70% 100%;
-  background-repeat: no-repeat;
+
+/*play-range*/
+input[type=range] {
+    width: 90%;
+    margin: 4px 0;
+    background-color: transparent;
+    -webkit-appearance: none;
 }
 
-input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background: #adff2f;
-    cursor: ew-resize;
-    box-shadow: 0 0 2px 0 #555;
-    transition: background .3s ease-in-out;
-  }
+input[type=range]:focus {
+    outline: none;
+}
 
+input[type=range]::-webkit-slider-runnable-track {
+    background: var(--highlight);
+    border: 0.1px solid rgba(1, 1, 1, 0.3);
+    border-radius: 25px;
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    margin-top: -4.1px;
+    width: 14px;
+    height: 13px;
+    background: var(--white);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: var(--highlight);
+}
+
+input[type=range]::-moz-range-track {
+    background: var(--highlight);
+    border: 0.1px solid rgba(1, 1, 1, 0.3);
+    border-radius: 25px;
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+    width: 14px;
+    height: 13px;
+    background: var(--white);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    border-width: 4px 0;
+    color: transparent;
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+}
+
+input[type=range]::-ms-fill-lower {
+    background: var(--highlight);
+    border: 0.1px solid rgba(1, 1, 1, 0.3);
+    border-radius: 50px;
+}
+
+input[type=range]::-ms-fill-upper {
+    background: var(--highlight);
+    border: 0.1px solid rgba(1, 1, 1, 0.3);
+    border-radius: 50px;
+}
+
+input[type=range]::-ms-thumb {
+    width: 14px;
+    height: 13px;
+    background: var(--white);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 0px;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+    background: var(--highlight);
+}
+
+input[type=range]:focus::-ms-fill-upper {
+    background: var(--highlight);
+}
     /*playbar-vol*/
 
 
