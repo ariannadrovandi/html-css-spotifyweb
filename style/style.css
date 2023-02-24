@@ -385,6 +385,13 @@ main{
     /*playbar album*/
 
     /*playbar-contol*/
+.playbar-album .image-album img{
+    width: 70px;
+    padding-left: 20px;
+}
+
+
+
 .playbar-control{
     width: 40%;
     height: 100%;
