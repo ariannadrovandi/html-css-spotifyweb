@@ -389,15 +389,32 @@ main{
 }
 
     /*playbar album*/
-
-    /*playbar-contol*/
 .playbar-album .image-album img{
     width: 70px;
     padding-left: 20px;
 }
 
+.playbar-album .text-album,
+.playbar-album .album-icons{
+    padding: 10px;
+}
+
+.playbar-album .text-album h4{
+    font-size: 0.7rem;
+}
+
+.playbar-album .text-album p{
+    font-size: 0.6rem;
+}
+
+.playbar-album .album-icons i{
+    padding: 0 4px;
+}
 
 
+    
+
+    /*playbar-contol*/
 .playbar-control{
     width: 40%;
     height: 100%;
@@ -460,7 +477,7 @@ main{
 }
 
 
-/*play-range*/
+            /*play-range*/
 input[type=range] {
     width: 90%;
     margin: 4px 0;
