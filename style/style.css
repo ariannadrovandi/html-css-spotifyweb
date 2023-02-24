@@ -135,6 +135,8 @@ main{
     width: 100%;
     height: calc(100% - 80px);
     overflow: hidden;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 .main-nav .playlist h3,
@@ -190,6 +192,7 @@ main{
 
 .playlist {
     padding-left: 20px;
+    height: 55%;
 }
 
 .playlist h3{
@@ -203,7 +206,8 @@ main{
    padding: 8px 8px 8px 0;
 }
 
-.playlist #second-ul{
+.playlist .list{
+    height: 80%;
     overflow-y: auto;
 }
     /*bottom-nav*/
