@@ -268,7 +268,7 @@
                     </div>
 
                     <div class="d-flex justify-center align-center play-range debug">
-                        <input type="range" value="70" min="0" max="100" oninput="rangevalue.value=value"/>
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
                     </div>
 
                     <div class="d-flex justify-start align-center play-duration debug">
@@ -280,9 +280,26 @@
             </div>
 
              <!--playbar-vol-->
-            <div class="playbar-vol debug">
+            <div class="playbar-vol d-flex align-center debug">
 
+                <div class="d-flex align-center vol-icons">
+                    <div class="icon">
+                        <i class="fa-solid fa-list-ul"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-desktop"></i>
+                    </div>
+
+                    <div class="icon">
+                        <i class="fa-solid fa-volume-high"></i>
+                    </div>
+                    <div class="range">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    </div>
+                </div>
+              
             </div>
+
         </div>
     </div>
 </body>
