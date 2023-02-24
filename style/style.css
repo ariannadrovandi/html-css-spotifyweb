@@ -190,9 +190,24 @@ main{
     padding: 3px;
 }
 
+.aside-nav span{
+    padding-left: 5px;
+}
+
+.aside-nav span:hover,
+.playlist span:hover,
+.playlist i:hover,
+.user .installa:hover{
+    color: var(--white);
+}
+
 .playlist {
     padding-left: 20px;
     height: 55%;
+}
+
+.playlist p span{
+    padding-left: 7px;
 }
 
 .playlist h3{
@@ -409,6 +424,16 @@ main{
 
 .playbar-album .album-icons i{
     padding: 0 4px;
+    color: var(--grey);
+}
+
+.playbar-album .album-icons i:hover{
+    color: var(--white);
+}
+
+.playbar-album .text-album h4:hover,
+.playbar-album .text-album p:hover{
+    text-decoration: underline;
 }
 
 
@@ -440,6 +465,10 @@ main{
     height: 100%;
 }
 
+.control-top .top-center i:hover{
+    color: var(--white);
+}
+
 .control-top .top-right{
     width: 47.5%;
     height: 100%;
@@ -448,6 +477,12 @@ main{
 .control-top .top-left i,
 .control-top .top-right i{
     font-size: 0.9rem;
+    color: var(--grey);
+}
+
+.control-top .top-left i:hover,
+.control-top .top-right i:hover{
+    color: var(--white);
 }
 
 .control-top .top-left i:first-child,
@@ -516,6 +551,9 @@ main{
     padding: 8px;
 }
 
+.playbar-vol .vol-icons .icon-menu{
+    display: none;
+}
 
 .playbar-vol .vol-icons .range{
     padding: 8px;
@@ -523,10 +561,21 @@ main{
 
 .playbar-vol .vol-icons .icon{
     padding: 5px;
+    color: var(--grey);
+}
+
+.playbar-vol .vol-icons .icon:hover{
+    color: var(--white);
 }
 
 
 /*RESPONSIVE*/
+@media screen and (max-height: 140px) {
+    #call-to-action{
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1200px){
     .col{
         width: calc(100% / 4);
@@ -543,7 +592,16 @@ main{
     .col{
         width: calc(100% / 2);
     }
+
+    .playbar-album .album-icons{
+        flex-direction: column;
+    }
+
+    .main-content .main-section ul{
+        flex-wrap: wrap;
+    }
 }
+
 
 @media screen and (max-width: 576px){
    .main-nav{
@@ -563,6 +621,46 @@ main{
    .logo-small{
         display: block;
    }
+
+    .logo-small img{
+        padding: 4px 4px 4px 10px;
+    }
+
+   .main-nav .top-nav span{
+        display: none;
+   }
+
+   .aside-nav a{
+        border-left: 0 transparent;
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .aside-nav a:hover,
+    .aside-nav a.active{
+        border-left: 0 transparent;
+    }
+
+    .bottom-nav .user span,
+    .bottom-nav .user hr{
+        display: none;
+    }
+
+   #call-to-action{
+        width: calc(100% - 60px);
+   }
+
+   .playbar-vol .vol-icons .icon,
+   .playbar-vol .vol-icons .range{
+        display: none;
+    }
+
+   .playbar-vol .vol-icons .icon-menu{
+        display: block;
+        
+    }
+
+    
 }
 
 @media screen and (max-width: 400px){
